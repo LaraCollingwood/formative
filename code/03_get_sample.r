@@ -14,12 +14,13 @@ print(head(bmi_ids))
 # Collect IDs of participants with accel data
 files <- list.files(accel_path, pattern = "^accel-.*\\.txt$")
 ids <- sub("^accel-(.*)\\.txt$", "\\1", files)
-accel_ids <- data.frame(ID = ids, accel_present = 1)
+accel_ids <- data.frame(ID = as.integer(ids), accel_present = 1)
 
 print(head(accel_ids))
 
 # Combine the two
-sample_data <- merge(bmi_ids, accel_ids, by="ID") %>%
+sample_data <- full_join(bmi_ids, accel_ids) %>%
+    replace(is.na(.), 0) %>%
     mutate(in_sample = if_else(bmi_present==1 & accel_present==1, 1, 0))
 print(head(sample_data))
 

@@ -1,8 +1,10 @@
 name: r-env
 channels:
   - conda-forge
+  - bioconda
   - defaults
 dependencies:
   - r-tidyverse=2.0.0
   - r-base=4.4.1
+  - python=3.12
 prefix: /home/ew26955/miniconda3/envs/r-env
