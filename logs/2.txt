@@ -1,0 +1,58 @@
+---------------------------------------------------
+Checking accelerometer files
+---------------------------------------------------
+Some file names:
+accel-31128.txt
+accel-31129.txt
+accel-31131.txt
+accel-31132.txt
+accel-31133.txt
+...
+Number of participants/files:
+7455
+...
+ID line format:
+<ACTIGRAPH ID=31128>
+Column headers:
+"PAXSTAT"	"PAXCAL"	"PAXDAY"	"PAXN"	"PAXHOUR"	"PAXMINUT"	"PAXINTEN"	"PAXSTEP"
+...
+Expected number of columns:
+8
+Expected number of rows:
+10082
+Expected number of measurements:
+10080
+...
+Checking files for wrong number of headers:
+data/original/accel/accel-31268.txt: line 10083: 3 fields
+data/original/accel/accel-31268.txt: line 10084: 3 fields
+data/original/accel/accel-31268.txt: line 10085: 3 fields
+data/original/accel/accel-31268.txt: line 10086: 3 fields
+data/original/accel/accel-31268.txt: line 10087: 3 fields
+data/original/accel/accel-31268.txt: line 10088: 3 fields
+data/original/accel/accel-31268.txt: line 10089: 3 fields
+data/original/accel/accel-31268.txt: line 10090: 3 fields
+data/original/accel/accel-31268.txt: line 10091: 3 fields
+data/original/accel/accel-31268.txt: line 10092: 3 fields
+data/original/accel/accel-34974.txt: line 10083: 3 fields
+data/original/accel/accel-34974.txt: line 10084: 3 fields
+data/original/accel/accel-34974.txt: line 10085: 3 fields
+data/original/accel/accel-34974.txt: line 10086: 3 fields
+data/original/accel/accel-34974.txt: line 10087: 3 fields
+data/original/accel/accel-34974.txt: line 10088: 3 fields
+data/original/accel/accel-34974.txt: line 10089: 3 fields
+data/original/accel/accel-34974.txt: line 10090: 3 fields
+data/original/accel/accel-34974.txt: line 10091: 3 fields
+data/original/accel/accel-34974.txt: line 10092: 3 fields
+data/original/accel/accel-34974.txt: line 10093: 3 fields
+data/original/accel/accel-34974.txt: line 10094: 3 fields
+data/original/accel/accel-34974.txt: line 10095: 3 fields
+data/original/accel/accel-34974.txt: line 10096: 3 fields
+data/original/accel/accel-34974.txt: line 10097: 3 fields
+(Files that contain less than 8 columns: accel-31268.txt, 34974.txt)
+...
+Checking files all have an ID tag at the top
+(All files have an ID tag)
+...
+Checking files for the wrong number of rows:
+(Loads of files don't have 10082 rows)

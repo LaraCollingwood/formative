@@ -41,13 +41,13 @@ echo "..."
 
 # Find any files with the wrong number of headers
 echo "Checking files for wrong number of headers:"
-#awk -F'\t' '!/</ && NF!=8 {print FILENAME ": line " FNR ": " NF " fields"}' $accel_path/accel-*.txt
+awk -F'\t' '!/</ && NF!=8 {print FILENAME ": line " FNR ": " NF " fields"}' $accel_path/accel-*.txt
 echo "(Files that contain less than 8 columns: accel-31268.txt, 34974.txt)"
 echo "..."
 
 # Find any files missing the ID tag
 echo "Checking files all have an ID tag at the top"
-#awk -F'\t' 'NF==1 && !/</ {print FILENAME}' $accel_path/accel-*.txt
+awk -F'\t' 'NF==1 && !/</ {print FILENAME}' $accel_path/accel-*.txt
 echo "(All files have an ID tag)"
 echo "..."
 

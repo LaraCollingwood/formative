@@ -1,0 +1,55 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-11-05 16:33:45
+  Workflow ID: 4f9b82ba-badf-4db8-a251-7e080065b9fa
+  Platform: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+  Host: LaptopLC
+  User: ew26955
+  Snakemake version: 9.27.1
+  Python version: 3.14.8 | packaged by conda-forge | (main, Oct  7 2026, 00:23:19) [GCC 15.3.0]
+  Command: /home/ew26955/miniconda3/envs/r-env/bin/snakemake -c1
+  Snakefile: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/Snakefile
+  Base directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Run directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Working directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+check_accel        1
+all                1
+total              2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Thu Nov  5 16:33:46 2026]
+localrule check_accel:
+    input: data/original/accel/accel-31128.txt
+    output: logs/2.txt
+    jobid: 2
+    reason: Missing output files: logs/2.txt
+    resources: tmpdir=/tmp
+[Thu Nov  5 16:33:46 2026]
+Finished jobid: 2 (Rule: check_accel)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Thu Nov  5 16:33:46 2026]
+localrule all:
+    input: logs/1.txt, logs/2.txt
+    jobid: 0
+    reason: Input files updated by another job: logs/2.txt
+    resources: tmpdir=/tmp
+[Thu Nov  5 16:33:46 2026]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/.snakemake/log/2026-11-05T163345.769963.snakemake.log
+Elapsed time: 0:00:01.001575

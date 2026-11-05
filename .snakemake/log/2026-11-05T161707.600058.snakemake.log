@@ -1,0 +1,55 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-11-05 16:17:07
+  Workflow ID: 5988d90e-6036-4373-9d95-106a1fe4a453
+  Platform: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+  Host: LaptopLC
+  User: ew26955
+  Snakemake version: 9.27.1
+  Python version: 3.14.8 | packaged by conda-forge | (main, Oct  7 2026, 00:23:19) [GCC 15.3.0]
+  Command: /home/ew26955/miniconda3/envs/r-env/bin/snakemake -c1
+  Snakefile: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/Snakefile
+  Base directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Run directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Working directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job          count
+---------  -------
+check_bmx        1
+all              1
+total            2
+
+Select jobs to execute...
+Execute 1 jobs...
+[Thu Nov  5 16:17:08 2026]
+localrule check_bmx:
+    input: data/original/BMX_D.csv
+    output: logs/1.txt
+    jobid: 1
+    reason: Missing output files: logs/1.txt
+    resources: tmpdir=/tmp
+[Thu Nov  5 16:17:08 2026]
+Finished jobid: 1 (Rule: check_bmx)
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Thu Nov  5 16:17:08 2026]
+localrule all:
+    input: logs/1.txt
+    jobid: 0
+    reason: Input files updated by another job: logs/1.txt
+    resources: tmpdir=/tmp
+[Thu Nov  5 16:17:08 2026]
+Finished jobid: 0 (Rule: all)
+2 of 2 steps (100%) done
+Complete log(s): /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/.snakemake/log/2026-11-05T161707.600058.snakemake.log
+Elapsed time: 0:00:00.859539

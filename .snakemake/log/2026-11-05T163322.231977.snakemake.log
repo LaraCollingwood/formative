@@ -1,0 +1,25 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-11-05 16:33:22
+  Workflow ID: cd345208-6d3b-4f95-a9e3-b758a0a3c013
+  Platform: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+  Host: LaptopLC
+  User: ew26955
+  Snakemake version: 9.27.1
+  Python version: 3.14.8 | packaged by conda-forge | (main, Oct  7 2026, 00:23:19) [GCC 15.3.0]
+  Command: /home/ew26955/miniconda3/envs/r-env/bin/snakemake -c1
+  Snakefile: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/Snakefile
+  Base directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Run directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Working directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+MissingInputException in rule check_accel in file "/mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/Snakefile", line 17:
+Missing input files for rule check_accel:
+    output: logs/2.txt
+    affected files:
+        data/original/accel/acel-31128.txt

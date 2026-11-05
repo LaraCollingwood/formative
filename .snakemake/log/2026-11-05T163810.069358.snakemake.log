@@ -1,0 +1,68 @@
+Assuming unrestricted shared filesystem usage.
+
+SNAKEMAKE
+=========
+  Date: 2026-11-05 16:38:10
+  Workflow ID: 6481c7d1-5cff-4c11-a250-973e4e736797
+  Platform: Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+  Host: LaptopLC
+  User: ew26955
+  Snakemake version: 9.27.1
+  Python version: 3.14.8 | packaged by conda-forge | (main, Oct  7 2026, 00:23:19) [GCC 15.3.0]
+  Command: /home/ew26955/miniconda3/envs/r-env/bin/snakemake -c1
+  Snakefile: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/Snakefile
+  Base directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Run directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Working directory: /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative
+  Config file(s): []
+  Config MD5: 99914b932bd37a50b983c5e7c90ae93b
+
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count
+-----------  -------
+check_accel        1
+check_bmx          1
+all                1
+total              3
+
+Select jobs to execute...
+Execute 1 jobs...
+[Thu Nov  5 16:38:10 2026]
+localrule check_bmx:
+    input: data/original/BMX_D.csv, code/01_checking_bmx_data.sh
+    output: logs/1.txt
+    jobid: 1
+    reason: Set of input files has changed since last execution
+    resources: tmpdir=/tmp
+[Thu Nov  5 16:38:11 2026]
+Finished jobid: 1 (Rule: check_bmx)
+1 of 3 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Thu Nov  5 16:38:11 2026]
+localrule check_accel:
+    input: data/original/accel/accel-31128.txt, code/02_checking_accel_data.sh
+    output: logs/2.txt
+    jobid: 2
+    reason: Updated input files: code/02_checking_accel_data.sh
+    resources: tmpdir=/tmp
+[Thu Nov  5 16:48:44 2026]
+Finished jobid: 2 (Rule: check_accel)
+2 of 3 steps (67%) done
+Select jobs to execute...
+Execute 1 jobs...
+[Thu Nov  5 16:48:44 2026]
+localrule all:
+    input: logs/1.txt, logs/2.txt
+    jobid: 0
+    reason: Input files updated by another job: logs/1.txt, logs/2.txt
+    resources: tmpdir=/tmp
+[Thu Nov  5 16:48:44 2026]
+Finished jobid: 0 (Rule: all)
+3 of 3 steps (100%) done
+Complete log(s): /mnt/c/Users/larac/OneDrive - University of Bristol/data_science/formative/.snakemake/log/2026-11-05T163810.069358.snakemake.log
+Elapsed time: 0:10:34.834578

@@ -1,0 +1,24 @@
+---------------------------------------------------
+Checking body measurement file
+---------------------------------------------------
+Top 5 lines of body measurement file:
+"","SEQN","BMDSTATS","BMXWT","BMIWT","BMXRECUM","BMIRECUM","BMXHEAD","BMIHEAD","BMXHT","BMIHT","BMXBMI","BMXLEG","BMILEG","BMXCALF","BMICALF","BMXARML","BMIARML","BMXARMC","BMIARMC","BMXWAIST","BMIWAIST","BMXTHICR","BMITHICR","BMXTRI","BMITRI","BMXSUB","BMISUB"
+"1",31127,1,10.2,NA,73.6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,16,NA,15.5,NA,NA,NA,NA,NA,12.8,NA,10,NA
+"2",31128,1,40.1,NA,NA,NA,NA,NA,151.6,NA,17.45,37.6,NA,29.3,NA,34.3,NA,21.7,NA,62.8,NA,39.5,NA,10.4,NA,8.4,NA
+"3",31129,1,74.6,NA,NA,NA,NA,NA,167.7,NA,26.53,42.7,NA,40.6,NA,36.5,NA,32.6,NA,97.8,NA,55.9,NA,18.8,NA,17.6,NA
+"4",31130,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+...
+Number of columns:
+28
+Column headers:
+"","SEQN","BMDSTATS","BMXWT","BMIWT","BMXRECUM","BMIRECUM","BMXHEAD","BMIHEAD","BMXHT","BMIHT","BMXBMI","BMXLEG","BMILEG","BMXCALF","BMICALF","BMXARML","BMIARML","BMXARMC","BMIARMC","BMXWAIST","BMIWAIST","BMXTHICR","BMITHICR","BMXTRI","BMITRI","BMXSUB","BMISUB"
+
+
+Print any lines that do not have 28 columns:
+...
+Number of lines (including headers):
+9951
+Number of participants:
+9950
+Number of participants with a BMI value:
+8949
