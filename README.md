@@ -1,3 +1,30 @@
+# Setting up conda (better vew?)
+
+To clone repo
+```
+git clone https://github.com/LaraCollingwood/formative.git
+```
+
+To install conda
+```
+conda enc create -f environment.yml
+```
+
+To activate the conda environment
+```
+conda activate r-env
+```
+
+
+
+
+
+
+
+
+
+
+
 how to create and activate the conda environment
 
 
