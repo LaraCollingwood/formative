@@ -7,7 +7,7 @@ git clone https://github.com/LaraCollingwood/formative.git
 
 To install conda
 ```
-conda enc create -f environment.yml
+conda env create -f environment.yml
 ```
 
 To activate the conda environment
